@@ -20,7 +20,7 @@ export function createGallery(images) {
     .map(imgInfo => createGalleryCardTemplate(imgInfo))
     .join('');
 
-  refs.gallery.innerHTML = galleryCardsTemplate;
+  refs.gallery.insertAdjacentHTML('beforeend', galleryCardsTemplate);
 
   lightbox.refresh();
 }
@@ -38,6 +38,18 @@ export function showLoader() {
 export function hideLoader() {
   const loader = document.querySelector('.loader');
   loader.style.display = 'none';
+}
+
+export function showLoadMoreButton() {
+  const btn = document.querySelector('.btn-load-more');
+
+  btn.classList.remove('is-hidden');
+}
+
+export function hideLoadMoreButton() {
+  const btn = document.querySelector('.btn-load-more');
+
+  btn.classList.add('is-hidden');
 }
 
 function createGalleryCardTemplate(imgInfo) {

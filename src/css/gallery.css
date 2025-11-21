@@ -27,7 +27,7 @@
   color: #2e2f42;
 }
 
-.form button {
+.btn-search {
   border-radius: 8px;
   padding: 8px 16px;
   background: #4e75ff;
@@ -41,8 +41,32 @@
   border: none;
 }
 
-.form button:hover {
+.btn-search:hover {
   background: #6c8cff;
+}
+
+.btn-load-more {
+  margin: 0 auto 20px;
+  width: 125px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.btn-load-more:hover {
+  background: #6c8cff;
+}
+
+.is-hidden {
+  display: none;
 }
 
 /* GALLERY */
